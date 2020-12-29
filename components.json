@@ -1,0 +1,48 @@
+{
+    "namespace": "f",
+    "modules": [
+        {
+            "name": "base",
+            "components": [
+                "button",
+                "icon"
+            ]
+        },
+        {
+            "name": "display",
+            "components": [
+                "tag",
+                "empty",
+                "tag-close"
+            ]
+        },
+        {
+            "name": "feedback",
+            "components": [
+                "modal",
+                "loading",
+                "toast",
+                "confirm"
+            ]
+        },
+        {
+            "name": "special",
+            "components": [
+                "video"
+            ]
+        },
+        {
+            "name": "form",
+            "components": [
+                "rate",
+                "input"
+            ]
+        },
+        {
+            "name": "navigator",
+            "components": [
+                "tabs"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,125 @@
+[
+    {
+        "name": "develop",
+        "alias": "开发指南",
+        "children": [
+            {
+                "name": "install",
+                "alias": "安装",
+                "path": "/introduction/install"
+            },
+            {
+                "name": "start",
+                "alias": "快速上手",
+                "path": "/introduction/start"
+            }
+        ]
+    },
+    {
+        "name": "components",
+        "alias": "组件",
+        "modules": [
+            {
+                "name": "base",
+                "alias": "基本组件",
+                "children": [
+                    {
+                        "name": "button",
+                        "alias": "按钮",
+                        "path": "/components/base/button"
+                    },
+                    {
+                        "name": "icon",
+                        "alias": "图标",
+                        "path": "/components/base/icon"
+                    }
+                ]
+            },
+            {
+                "name": "display",
+                "alias": "展示组件",
+                "children": [
+                    {
+                        "name": "tag",
+                        "alias": "标签",
+                        "path": "/components/display/tag"
+                    },
+                    {
+                        "name": "empty",
+                        "alias": "空状态",
+                        "path": "/components/display/empty"
+                    },
+                    {
+                        "name": "tag-close",
+                        "alias": "可关闭标签",
+                        "path": "/components/display/tag-close"
+                    }
+                ]
+            },
+            {
+                "name": "feedback",
+                "alias": "反馈组件",
+                "children": [
+                    {
+                        "name": "modal",
+                        "alias": "对话框",
+                        "path": "/components/feedback/modal"
+                    },
+                    {
+                        "name": "loading",
+                        "alias": "加载器",
+                        "path": "/components/feedback/loading"
+                    },
+                    {
+                        "name": "toast",
+                        "alias": "轻提示",
+                        "path": "/components/feedback/toast"
+                    },
+                    {
+                        "name": "confirm",
+                        "alias": "确认框",
+                        "path": "/components/feedback/confirm"
+                    }
+                ]
+            },
+            {
+                "name": "special",
+                "alias": "特殊组件",
+                "children": [
+                    {
+                        "name": "video",
+                        "alias": "播放器",
+                        "path": "/components/special/video"
+                    }
+                ]
+            },
+            {
+                "name": "form",
+                "alias": "表单组件",
+                "children": [
+                    {
+                        "name": "rate",
+                        "alias": "评分",
+                        "path": "/components/form/rate"
+                    },
+                    {
+                        "name": "input",
+                        "alias": "输入框",
+                        "path": "/components/form/input"
+                    }
+                ]
+            },
+            {
+                "name": "navigator",
+                "alias": "导航组件",
+                "children": [
+                    {
+                        "name": "tabs",
+                        "alias": "标签页",
+                        "path": "/components/navigator/tabs"
+                    }
+                ]
+            }
+        ]
+    }
+]

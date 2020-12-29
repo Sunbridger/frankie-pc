@@ -1,0 +1,80 @@
+{
+  "name": "@souche-ui/frankie",
+  "version": "1.0.7",
+  "description": "直销项目-通用规范UI库",
+  "scripts": {
+    "serve": "vue-cli-service serve --open",
+    "build:components": "node build/build-components",
+    "build:deploy": "npm run build:doc && npm run build:lib",
+    "build:doc": "vue-cli-service build",
+    "build:lib": "npm run lib -- --name index --clean --entry src/index.js && npm run build:components",
+    "lib": "VUE_CLI_SERVICE_CONFIG_PATH=$PWD/vue.lib-config.js vue-cli-service lib --sourceMap",
+    "new": "node build/new",
+    "remove": "node build/remove",
+    "test:unit": "vue-cli-service test:unit --coverage"
+  },
+  "main": "lib/index.common.js",
+  "dependencies": {
+    "@souche-ui/lemon": "^0.4.3",
+    "core-js": "^2.6.5"
+  },
+  "devDependencies": {
+    "@souche-f2e/eslint-config-frontend": "^2.1.0",
+    "@souche-ui/vue-cli-plugin-vue-component": "latest",
+    "@souche-vue/component-doc-api": "*",
+    "@souche-vue/test-utils": "0.0.5",
+    "@souche-vue/vue-cli-plugin-unit-jest": "latest",
+    "@vue/cli-plugin-babel": "^3.5.0",
+    "@vue/cli-plugin-eslint": "^3.5.0",
+    "@vue/cli-service": "^4.5.0",
+    "@vue/test-utils": "^1.0.0-beta.20",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
+    "babel-plugin-component": "^1.1.1",
+    "cheerio": "^1.0.0-rc.2",
+    "element-ui": "^2.6.1",
+    "eslint": "^5.8.0",
+    "eslint-plugin-markdown": "^1.0.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "highlight.js": "^9.15.6",
+    "inquirer": "^6.2.2",
+    "inquirer-autocomplete-prompt": "^1.0.1",
+    "jest-environment-jsdom": "^24.0.0",
+    "jest-environment-jsdom-global": "^1.1.1",
+    "json-templater": "^1.2.0",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "lint-staged": "^8.1.5",
+    "markdown-it": "^8.4.2",
+    "markdown-it-container": "^2.0.0",
+    "style-resources-loader": "^1.2.1",
+    "vue": "^2.6.6",
+    "vue-custom-scrollbar": "^1.0.0",
+    "vue-markdown-loader": "^2.4.1",
+    "vue-router": "^3.0.1",
+    "vue-template-compiler": "^2.6.11",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "lint-staged": {
+    "*.js": [
+      "vue-cli-service lint",
+      "git add"
+    ],
+    "*.vue": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  },
+  "vuePlugins": {
+    "service": [
+      "build/lib"
+    ]
+  },
+  "prettier": {
+    "tabWidth": 4,
+    "trailingComma": "none",
+    "singleQuote": true,
+    "printWidth": 140
+  }
+}
